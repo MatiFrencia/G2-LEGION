@@ -1,0 +1,207 @@
+:root
+{
+    --principal: #DC143C;
+    --fondo: black;
+    --fondoSnd: white;
+    --letra: #D3D3D3;
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: flex;
+}
+body Header 
+{
+    background-color: var(--fondo);
+    margin: 0;
+    padding-top: 1%;
+    display: grid;
+}
+.img-cel
+{
+    display: none;
+    width: 100vw;
+    height: 50vw;  
+}
+.img-cel img
+{
+    width: 100%;
+    height: 100%;
+}
+.Logo-Boton
+{
+    display: grid;
+    width: 100vw;
+}
+header div h1
+{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+header div h1 img
+{
+    width: 10vw;
+}
+header div button
+{
+    grid-column: 4/6;
+    grid-row: 1/2;
+    visibility: hidden;
+}
+    body header div
+    {
+        display: flex;
+        align-items: center;      
+    }
+    .video {
+        top: 5vw;
+        border-top-right-radius: 10%;
+        max-width: 100%;
+        min-width: 20rem; 
+        position:absolute; 
+        border: 2px solid white; 
+        z-index: 1; 
+        width: 50vw;
+        height: 28.125vw;
+    }
+    .video-fondo
+    {
+        position: relative;
+        z-index: 0;
+        max-width: 100%;
+        width: 100vw;
+        height: 37.5vw;
+    }
+    body header h1 
+    {
+        color: var(--fondoSnd);
+        font-size: xx-large;
+        text-align: center;
+    }
+        body header nav ul
+        {
+            
+            text-align: center;
+            font-size: x-large;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            list-style: none;
+            background-color: var(--fondoSnd);
+            opacity: .6;      
+            transition: 0.13s linear 0.005s;         
+        }
+        body header nav ul:hover
+        {
+            opacity: 1;
+        }
+            body header nav ul li a
+            {
+                text-decoration: none;
+                color: 	var(--principal);
+                transition: color 0.1s linear 0.1s;
+            }
+            body header nav ul li a:hover
+            {
+                text-decoration:solid;
+                color: rgb(57, 180, 180);
+                
+            }
+                body header nav ul li a img
+                {
+                    height: 60px;
+                    filter: grayscale(100%);
+                    transition: 0.13s linear 0.005s;
+                }
+                body header nav ul li a img:hover
+                {
+                    height: 100px;
+                    filter: none;
+                    opacity: 1;
+                }
+            @media (max-width: 1100px){
+                body header nav
+                {
+                    display: none;
+                    width: 100vw;
+                }
+                body header nav ul
+                {
+                    flex-wrap: wrap;
+                    gap: 3vw;
+                }
+                body header nav ul img
+                {
+                    width: 20vw;
+                    height: 20vw;
+                }
+                body header button
+                {
+                    visibility: visible;
+                }
+                body header div h1
+                {
+                    grid-column: 1/4;
+                }
+            }
+            @media (max-width: 426px){
+            .video
+            {
+                display: none;
+            }
+            .video-fondo
+            {
+                display: none;
+            }
+            .img-cel
+            {
+                display: inline;
+            }
+        }
+body main 
+    {
+        background-image: url(https://i.pinimg.com/originals/6b/e9/2a/6be92a6dc03635ea511b4dad2a3d97c7.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-attachment: fixed;
+        color:	var(--letra);
+        background-color: black;
+        font-size: large;
+        margin: 0;
+        font-family: "Roboto Condensed",sans-serif;
+    }
+    body main a
+    {
+        text-decoration: none;
+        color: var(--fondoSnd);
+    }
+    body main div
+    {
+        color: var(--fondoSnd);
+
+    }
+        body main img
+            {
+                max-width: 100%
+            }
+body footer
+{
+    background-color: var(--principal);
+    margin: 0;  
+}
+    body footer ul
+        {
+            text-align: center;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            list-style: none;       
+        }
+            body footer ul li img
+            {
+                width: 60px;
+            }
